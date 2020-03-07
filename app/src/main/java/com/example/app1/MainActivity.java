@@ -19,4 +19,9 @@ public class MainActivity extends AppCompatActivity {
         Intent next = new Intent(this, Page2.class);
         startActivity(next);
     }
+
+    public void openForm(View view) {
+        Intent next = new Intent(this, Form.class);
+        startActivity(next);
+    }
 }

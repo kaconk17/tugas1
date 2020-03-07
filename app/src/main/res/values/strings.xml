@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Latihan Intent</string>
+    <string name="nama">Hartono</string>
+    <string name="nim">NIM : 117227017</string>
+    <string name="kelas">Kelas : 6A</string>
+    <string name="matkul">Mata Kuliah : Pemrograman Mobile</string>
+    <string name="dosen">Dosen : Abd. Rokhim</string>
 </resources>
