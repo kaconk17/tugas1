@@ -88,8 +88,7 @@ RadioGroup radio;
                email = Tmail.getText().toString();
                password = Tpass.getText().toString();
                tgl = tgl_lahir.getText().toString();
-               //Spinner spin = findViewById(R.id.spinagama);
-                //agama = spin.getSelectedItem().toString();
+
               int pilih = radio.getCheckedRadioButtonId();
               RadioButton radioBut = findViewById(pilih);
               kel = radioBut.getText().toString();

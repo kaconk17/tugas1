@@ -21,7 +21,7 @@ TextView Tnama, Tmail, Tpass, Tkel, Ttgl, Tagama;
         Tkel = findViewById(R.id.textkel);
         Ttgl = findViewById(R.id.texttgl);
         Tagama = findViewById(R.id.textagama);
-        //Intent intent = getIntent();
+
         Bundle bun = getIntent().getExtras();
         if (bun != null){
             nama = bun.getString("nama");
