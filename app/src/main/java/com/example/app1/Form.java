@@ -45,6 +45,7 @@ RadioGroup radio;
         Tmail = findViewById(R.id.textEmail);
         Tpass = findViewById(R.id.textPassword);
         radio = findViewById(R.id.radioGroup);
+        radio.check(R.id.radioLaki);
         tgl_lahir.setOnClickListener(new View.OnClickListener(){
             @Override
             public  void onClick(View v){
@@ -90,18 +91,20 @@ RadioGroup radio;
                tgl = tgl_lahir.getText().toString();
 
               int pilih = radio.getCheckedRadioButtonId();
-              RadioButton radioBut = findViewById(pilih);
-              kel = radioBut.getText().toString();
-                Intent intent = new Intent(Form.this, ResultActivity.class);
-                Bundle bun = new Bundle();
-                bun.putString("nama", nama);
-                bun.putString("email",email);
-                bun.putString("pass",password);
-                bun.putString("kel",kel);
-                bun.putString("tgl",tgl);
-                bun.putString("agama",agama);
-                intent.putExtras(bun);
-                startActivity(intent);
+
+                  RadioButton radioBut = findViewById(pilih);
+                  kel = radioBut.getText().toString();
+                  Intent intent = new Intent(Form.this, ResultActivity.class);
+                  Bundle bun = new Bundle();
+                  bun.putString("nama", nama);
+                  bun.putString("email", email);
+                  bun.putString("pass", password);
+                  bun.putString("kel", kel);
+                  bun.putString("tgl", tgl);
+                  bun.putString("agama", agama);
+                  intent.putExtras(bun);
+                  startActivity(intent);
+
             }
         });
 
